@@ -2,6 +2,11 @@ npm publish
 ===========
 > publish a node module to npm packages
 
+# 添加`package.json`
+# 本地测试
+- Link Packages
+> `npm link`用于安装开发`package`包并实时观察配置文件变化。（需要通过`re-link`或`npm rebuild -g`重新编译包）
+
 # 首次发布
 - registry a npm account
 > https://www.npmjs.com/
@@ -42,3 +47,6 @@ npm notice
 update_type: patch, major, or minor
 
 - npm publish
+
+# Reference
+- [creating-node-js-modules](https://docs.npmjs.com/creating-node-js-modules)
