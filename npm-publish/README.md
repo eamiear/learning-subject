@@ -6,6 +6,23 @@ npm publish
 # 本地测试
 - Link Packages
 > `npm link`用于安装开发`package`包并实时观察配置文件变化。（需要通过`re-link`或`npm rebuild -g`重新编译包）
+1. 打开测试工程，打开命令行工具并执行`npm link eslint-config-ura`.
+2. 在`package.json`中添加配置
+```json
+"eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "ura"
+    ],
+    ...
+}
+```
+3. 启动程序
+4. 修改`eslint-config-ura`配置文件后，重新执行`npm link eslint-config-ura`
 
 # 首次发布
 - registry a npm account
